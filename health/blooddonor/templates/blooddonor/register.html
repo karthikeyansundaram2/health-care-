@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 300px;
+    height: 700px;
+    background-color: #3498db;
+}
+
+li {
+    height: 75px;
+    width: 325px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #000080;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+a{
+ text-decoration:none;
+ }
+</style>
+</head>
+
+<body>
+       {% load staticfiles %}
+    
+ <hr color="#000080" size="5" style="z-index:1;">
+      <center><h2 style="color:#000080;"><img src={% static "images/re.jpg" %} style="width:200px;height:70px;float:left;" align="middle">
+ HEALTH CARE</h2></center>
+ 
+  <h3 style="color:#000080;" align="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size:20px;float:right"></i>
+     </h3>
+
+ <hr color="#000080" size="5">
+     
+
+<ul style="margin-top:-10px; z-index=-1;" align="left">
+  
+  
+  
+  <li><a href="/blooddonor/bloodbankregister" target="admin">BLOODBANK REGISTERATION</a></li>
+  <li><a href="/blooddonor/hospitalregister" target="admin">HOSPITAL REGISTERATION</a></li>
+  <li><a href="/blooddonor/donorregister" target="admin">DONOR REGISTERATION</a></li>
+
+</ul>
+<iframe src="" name="admin" style="width: 900px;height: 900px; margin-left: 300px; margin-top:-700px;border-color:white;border-collapse;"></iframe>
+</body>
+</html>

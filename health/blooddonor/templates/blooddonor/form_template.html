@@ -1,0 +1,24 @@
+
+<table >
+    <tbody>
+    
+{% for field in form %}
+
+    <tr>
+      <td>
+        <label for="{{ field.label }}" style="display:inline-block;vertical-align:middle;color: #000080;">{{ field.label_tag }}</label>
+       
+       </td>
+      <td>
+       {{ field }} 
+      </td>
+         
+    </tr> 
+        
+   
+    
+    
+  {% endfor %}
+
+   </tbody>
+  </table>
